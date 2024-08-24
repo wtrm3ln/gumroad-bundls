@@ -16,10 +16,10 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="text-white text-sm flex justify-start space-x-2">
+    <nav className="hidden md:block text-black text-sm flex justify-start space-x-2">
       {navItems.map((item, index) => (
         <button
-          className={`px-4 py-2 rounded-full ${selectedItem === item ? 'bg-black' : ''}`}
+          className={`px-4 py-2 rounded-full ${selectedItem === item ? 'bg-black text-white' : ''}`}
           key={index}
           onClick={() => setSelectedItem(item)}
         >
